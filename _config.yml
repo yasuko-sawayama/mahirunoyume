@@ -17,7 +17,7 @@ title: まひるのゆめ
 email: yasuko@say.topaz.ne.jp
 description: >- # this means to ignore newlines until "baseurl:"
   作成中
-baseurl: "" # the subpath of your site, e.g. /blog
+baseurl: "mahirunoyume" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: yas_saw
 github_username:  yasuko-sawayama
