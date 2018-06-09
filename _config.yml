@@ -65,14 +65,10 @@ paths:
 collections:
   # 3.7.5~に上げたら使う
   # collections_dir: novels
-  moose_and_goose_stories:
-    title: The Moose and Goose Stories
+  un_bel_di_vedremo:
+    title: ある晴れた日に
     sequence: 1
     leyout: article
-    output: true
-  grey_parrot_stories:
-    title: The Grey Parrot Stories
-    sequence: 2
     output: true
 
 # End

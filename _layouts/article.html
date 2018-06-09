@@ -1,7 +1,9 @@
 ---
 layout: blog
 ---
-{% capture this_category %}{{ page.category }}{% endcapture %}
+{% capture collectionName %}{{page.collection}}{% endcapture %}
+{% assign doc = site.collections | where:'label',collectionName | first %}
+
 <article class="unit-article layout-page">
     <div class="unit-inner unit-article-inner">
         <div class="content">
@@ -9,8 +11,8 @@ layout: blog
                 <div class="unit-head">
                     <div class="unit-inner unit-head-inner">
                         <h1 class="entry-title">
-                            {% if this_category != '' %}
-                            {{ page.category }}-
+                            {% if page.collection %}
+                            {{ doc.title }}-
                             <span class="lead"> {{ page.title }}</span>
                             {% else %}
                             {{page.title}}
