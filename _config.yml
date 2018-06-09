@@ -30,7 +30,7 @@ email: yasuko@say.topaz.ne.jp
 description: >- # this means to ignore newlines until "baseurl:"
   作成中
 baseurl: "/mahirunoyume" # the subpath of your site, e.g. /blog
-url: "https://yasuko-sawayama.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: yas_saw
 github_username:  yasuko-sawayama
 author:
