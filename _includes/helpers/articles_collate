@@ -1,0 +1,21 @@
+{% assign collections = site.collections | sort: 'sequence' %} 
+{% for collection in site.collections %}
+  {% if collection.title %}
+    <h2 class='year'> {{ collection.title | escape }} </h2>
+  {% endif %}
+
+<ul class="article-list">
+{% for article in collection.docs %}
+    {% if article.collection != "posts" %}
+    <li>
+        <a class="active internal" href="{{ article.url | relative_url }}">{{ article.title }}</a>
+        {% if article.last_updated %}
+            <span title="{{ site.data.i18n[site.lang].last_updated }}: {{ article.last_updated | date: " %Y/%d/%b" }}" class="date">{{ article.date | date: "%b %d, %Y" }}</span>
+        {% else %}
+            <span class="date"> {{ article.date | date: "%Y/%b/%d" }}</span>
+        {% endif %}
+    </li>
+    {% endif %}
+{% endfor %}
+</ul>
+{% endfor %}

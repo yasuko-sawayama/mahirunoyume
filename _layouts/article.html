@@ -1,0 +1,38 @@
+---
+layout: blog
+---
+{% capture this_category %}{{ page.category }}{% endcapture %}
+<article class="unit-article layout-page">
+    <div class="unit-inner unit-article-inner">
+        <div class="content">
+            <header>
+                <div class="unit-head">
+                    <div class="unit-inner unit-head-inner">
+                        <h1 class="entry-title">
+                            {% if this_category != '' %}
+                            {{ page.category }}-
+                            <span class="lead"> {{ page.title }}</span>
+                            {% else %}
+                            {{page.title}}
+                            {% endif %}
+                        </h1>
+                    </div>
+                </div>
+            </header>
+
+            <div class="bd article-content">
+                <div class="entry-content">
+                    {{ content }}
+                </div>
+            </div>
+
+            <footer class="unit-foot">
+                <div class="unit-inner unit-foot-inner">
+                    <p>
+                        <a class="internal gotop" href="#page">{{ site.data.i18n[site.lang].back_to_top }}</a>
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</article>

@@ -1,0 +1,23 @@
+<header class="the-header">
+    <div class="unit-head">
+        <div class="unit-inner unit-head-inner">
+            <nav class="nav-global">
+                <ul>
+                    <li class="logo nav-link">
+                        <button class="btn-menu" title="{{ site.data.i18n[site.lang].menu }}"></button>
+                        <a href="{{ site.paths.novels | relative_url }}">{{ site.title }}</a>
+                        <!--[if !IE]> -->
+                        <button class="btn-search" title="{{ site.data.i18n[site.lang].search }}"></button>
+                        <!-- <![endif]-->
+                    </li>
+                    <li class="nav-link"><a title="About" href="{{ '/about' | relative_url }}">About</a></li>
+                    <li class="nav-link"><a title="作品一覧" href="{{ site.paths.novels | relative_url }}">作品一覧</a></li>
+                    <li class="nav-link"><a title="Blog" href="{{ site.paths.blog | relative_url }}">Blog</a></li>
+                    <!--[if !IE]> -->
+                    <li class="nav-link"><a title="{{ site.data.i18n[site.lang].search }}" class="btn-search" href="#">{{ site.data.i18n[site.lang].search }}</a></li>
+                    <!-- <![endif]-->
+                </ul>
+            </nav>
+        </div>
+    </div>
+</header>

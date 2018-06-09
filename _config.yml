@@ -56,8 +56,25 @@ blog:
 paths:
   home: /
   blog: /blog/
+  novels: /novels/
   categories: /blog/categories/
   tags: /blog/tags/
+
+# Collections settings
+collections:
+  # 3.7.5~に上げたら使う
+  # collections_dir: novels
+  moose_and_goose_stories:
+    title: The Moose and Goose Stories
+    sequence: 1
+    leyout: article
+    output: true
+  grey_parrot_stories:
+    title: The Grey Parrot Stories
+    sequence: 2
+    output: true
+
+# End
 
 # Build settings
 markdown: kramdown
