@@ -60,6 +60,11 @@ author:
     - name: twitter
       url: https://twitter.com/yas_saw
 
+# SEO
+twitter:
+  username: yas_saw
+  card: summary
+    
 home:
   section1: <h1>まひるのゆめ</h1>
   section2: <p>二次創作小説サイトです。</p><p>各作品はファンフィクションです。原著作者との関係はありません。</p>
