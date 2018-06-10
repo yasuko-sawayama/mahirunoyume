@@ -1,3 +1,16 @@
-.logo, .headings h1 {
-  font-family: "Sawarabi Mincho", serif;
+.logo, .headings {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 20px 0;
+
+  h1 {
+    font-family: "Sawarabi Mincho", serif;
+  }
+}
+
+#section0 {
+    background: url('../images/theme/flower.png') repeat center center #F0F0F0;
+}
+
+#section1 {
+    background: url('../images/theme/noisy_texture_section1-200x200.png') repeat 0 0 #150E1F;
 }

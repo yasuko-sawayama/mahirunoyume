@@ -1,3 +1,19 @@
+html {
+  background: url('../images/theme/flower.png') repeat center center #F9F9F9;
+}
+
+.the-header, .the-footer {
+  width: 40%;
+  min-width: 320px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.nav-global {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 12px 12px 6px 12px;
+}
+
 .logo > a {
   font-family: "Sawarabi Mincho", sans-serif;
 }
@@ -15,6 +31,10 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 18px;
   line-height: 40px;
   letter-spacing: 0.2;
+}
+
+.unit-foot {
+  background-color: rgba(255, 255, 255, 0.8);  
 }
 
 @media only screen and (max-width: 640px) {
