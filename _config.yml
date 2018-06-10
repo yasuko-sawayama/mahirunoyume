@@ -26,6 +26,21 @@ plugins:
   - jekyll-seo-tag
   - jekyll-sitemap
 
+markdown: kramdown
+kramdown:
+  auto_id_prefix: 'heading-'
+  smart_quotes: ["apos", "apos", "quot", "quot"]
+  toc_levels: 1..3
+  hard_wrap: true
+
+sass:
+  style: compressed
+
+# Exclude from processing.
+exclude: ["*.gem", "*.gemspec", "Gemfile", "Gemfile.lock", "node_modules", "Rakefile", "starter-kit", "vendor"]
+
+# Site Settings
+
 title: まひるのゆめ
 email: yasuko@say.topaz.ne.jp
 description: >- # this means to ignore newlines until "baseurl:"
@@ -60,7 +75,8 @@ paths:
   novels: /novels/
   categories: /blog/categories/
   tags: /blog/tags/
-
+# End
+  
 # Collections settings
 collections:
   # 3.7.5~に上げたら使う
@@ -70,28 +86,4 @@ collections:
     sequence: 1
     leyout: article
     output: true
-
 # End
-
-# Build settings
-markdown: kramdown
-kramdown:
-  auto_id_prefix: 'heading-'
-  smart_quotes: ["apos", "apos", "quot", "quot"]
-  toc_levels: 1..3
-
-sass:
-  style: compressed
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-exclude: ["*.gem", "*.gemspec", "Gemfile", "Gemfile.lock", "node_modules", "Rakefile", "starter-kit", "vendor"]
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
