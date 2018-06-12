@@ -1,0 +1,9 @@
+{% if page.next.url %}
+<a class="next internal" href="{{ site.baseurl }}{{page.next.url}}">&laquo; {{page.next.title}}</a>
+{% endif %}
+&nbsp;
+&nbsp;
+&nbsp;
+{% if page.previous.url %}
+<a class="prev internal" href="{{ site.baseurl }}{{page.previous.url}}"> {{page.previous.title}} &raquo; </a>
+{% endif %}

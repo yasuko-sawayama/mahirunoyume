@@ -5,7 +5,7 @@
   {% endif %}
 
 <ul class="article-list">
-{% for article in collection.docs %}
+{% for article in collection.docs reversed %}
     {% if article.collection != "posts" %}
     <li>
         <a class="active internal" href="{{ article.url | relative_url }}">{{ article.title }}</a>

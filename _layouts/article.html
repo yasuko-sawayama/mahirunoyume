@@ -21,7 +21,12 @@ layout: blog
                     </div>
                 </div>
             </header>
-
+            <nav>
+                <p class="pull-right">
+                    {% include helpers/page_nav %}
+                </p>
+            </nav>
+            <div class="clearfix" />
             <div class="bd article-content">
                 <div class="entry-content">
                     {{ content }}
@@ -32,6 +37,9 @@ layout: blog
                 <div class="unit-inner unit-foot-inner">
                     <p>
                         <a class="internal gotop" href="#page">{{ site.data.i18n[site.lang].back_to_top }}</a>
+                    </p>
+                    <p class="pull-right">
+                        {% include helpers/page_nav %}
                     </p>
                 </div>
             </footer>
